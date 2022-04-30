@@ -1,0 +1,17 @@
+.game-row {
+  display: flex;
+  flex-direction: row;
+  gap: 20;
+}
+
+.game-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20;
+}
+
+.complete-button {
+  color: #fff;
+  background-color: #000;
+  cursor: pointer;
+}

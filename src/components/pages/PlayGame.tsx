@@ -30,14 +30,16 @@ export function PlayGame({
   return (
     <div className={styles["game-row"]}>
       <div className={styles["game-column"]}>
-        <h3>
+        <h4>
           {roundWinner
             ? `Winner: ${roundWinner}`
             : `Next Player: ${xIsNext ? "X" : "O"}`}
-        </h3>
+        </h4>
         <Board board={currentBoard} handleClick={handleClick} />
       </div>
+
       <PastMoves totalMoves={totalMoves} jumpTo={jumpTo} />
+
       {roundWinner && (
         <button
           className={styles["complete-button"]}
